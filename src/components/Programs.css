@@ -1,0 +1,86 @@
+/* Programs.css */
+
+.programs-section {
+  padding: 4rem 1rem;
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color:  #0077b6;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* Program sections layout */
+.program-section {
+  background-color: #e0dbdb;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.program-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  background-image: url("https://img.freepik.com/free-vector/blue-curve-background_53876-113112.jpg");
+}
+
+.program-image {
+  max-width: 400px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.program-section h3 {
+  font-size: 1.8rem;
+  color: #e24545;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 1rem;
+}
+
+.program-section p {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 450;
+
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .program-section {
+    padding: 1.5rem;
+  }
+
+  .program-section h3 {
+    font-size: 1.6rem;
+  }
+
+  .program-image {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+}

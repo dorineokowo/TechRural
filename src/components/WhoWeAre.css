@@ -1,0 +1,232 @@
+/* About.css */
+
+.about-container {
+  padding: 2rem;
+  max-width: 100vw;
+  margin: 0 auto;
+  animation: fadeIn 1.5s ease-in-out;
+  background-color: #f9f9f9;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h2 {
+  font-size: 18px;
+  color: #0077b6;
+  text-align: center;
+  margin-bottom: 1rem;
+  animation: slideIn 1.5s ease;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.who-we-are p {
+  color: #555;
+  font-size: 17px;
+  text-align: center;
+  margin-bottom: 1rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.about-container p {
+  opacity: 1;
+}
+
+.who-we-are {
+  margin-bottom: 3rem;
+  background-color: #e0dbdb;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.who-we-are:hover {
+  background-image: url("https://img.freepik.com/free-vector/blue-curve-background_53876-113112.jpg");
+}
+
+.who-we-are p {
+  margin-top: 1rem;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.who-we-are:hover p {
+  transform: scale(1.05);
+}
+
+/* Team Section */
+.team-grid {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2rem;
+}
+
+.team-member {
+  text-align: center;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: scale(1.05);
+}
+
+.team-member img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+  border-radius: 50%;
+}
+
+.team-member img:hover {
+  transform: rotate(2deg) scale(1.05);
+}
+.team-member p {
+  color: #e24545;
+}
+.team-member h4 {
+  color: #555;
+  font-size: 18px;
+}
+.who-we-are h2 {
+  margin-bottom: 0.5rem;
+  color: #0077b6;
+  transition: color 0.3s ease;
+}
+
+.team-member:hover h4 {
+  color: #0077b6;
+}
+
+/* Partners & Sponsors Section */
+.partners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  justify-items: center;
+}
+
+.partner img {
+  width: 150px;
+  height: 100px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.partner img:hover {
+  transform: scale(1.1) rotate(3deg);
+}
+
+/* History & Milestones Section */
+.history-milestones ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.history-milestones li {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.8rem;
+  transition: color 0.3s ease;
+}
+
+.history-milestones li:hover {
+  color: #0077b6;
+}
+
+/* FAQ Section */
+.faq-item {
+  margin-bottom: 1rem;
+  cursor: pointer;
+  position: relative;
+  padding-left: 20px;
+  transition: transform 0.3s ease;
+}
+
+.faq-item::before {
+  content: "❓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #0077b6;
+}
+
+.faq-item h3 {
+  font-size: 1rem;
+  color: #0077b6;
+}
+
+.faq-item:hover {
+  transform: scale(1.02);
+}
+
+.faq-item p {
+  font-size: 1rem;
+  color: #333;
+  display: none;
+  margin-top: 0.5rem;
+  transition: opacity 0.3s ease;
+}
+
+.faq-item:hover p {
+  display: block;
+  opacity: 1;
+}
+
+/* Transparency Section */
+.transparency {
+  text-align: center;
+  animation: fadeIn 1.2s ease;
+}
+
+.report-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  color: #fff;
+  background-color: #e24545;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.report-link:hover {
+  background-color: #005f8b;
+  transform: translateY(-3px);
+}
+
+/* Annual Report Section */
+.annual-report {
+  text-align: center;
+  animation: fadeIn 1.5s ease;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .team-grid,
+  .partners-grid {
+    grid-template-columns: 1fr;
+  }
+}

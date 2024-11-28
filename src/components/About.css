@@ -1,0 +1,119 @@
+.about-container {
+  padding: 2rem;
+  font-family: "Arial", sans-serif;
+}
+
+/* Hero Section */
+.about-hero {
+  background: url("/images/hero-bg.jpg") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.about-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.about-hero button {
+  background-color: #f05454;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.about-hero button:hover {
+  background-color: #d04141;
+}
+
+/* Section Styles */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/* Team Section */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+/* Impact Section */
+.impact-section {
+  background-color: #f8f8f8;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+/* CTA Section */
+.cta-section {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.cta-buttons button {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 1rem;
+  transition: background-color 0.3s;
+}
+
+.cta-buttons button:hover {
+  background-color: #45a049;
+}
+
+/* Partners Section */
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+
+  .about-hero p {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}

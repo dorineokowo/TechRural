@@ -1,0 +1,5 @@
+p {
+  display: block; /* Ensure paragraphs are displayed */
+  visibility: visible; /* Ensure paragraphs are not hidden */
+  opacity: 1;
+}
